@@ -1,0 +1,16 @@
+{
+    "$schema": "https://docs.visionlib.com/v3.0.1/vl.schema.json",
+    "type": "VisionLibTrackerConfig",
+    "version": 1,
+    "tracker": {
+        "type": "multiModelTracker",
+        "version": 1,
+        "parameters": {
+            "useColor": true,
+            "metric": "m",
+            "keyFrameDistance": 5,
+            "laplaceThreshold": 1,
+            "normalThreshold": 0.3
+        }
+    }
+}
