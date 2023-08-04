@@ -59,8 +59,8 @@ public class LineDrawer : MonoBehaviour
 
     private Vector3 GetTouchWorldPosition(Touch touch)
     {
-        Vector3 touchPosition = touch.position;
-        touchPosition.z = 10; // Set an arbitrary distance from the camera
+        Vector3 touchPosition = touch.position; 
+        touchPosition.z = 5; // Set an arbitrary distance from the camera
         return mainCamera.ScreenToWorldPoint(touchPosition);
     }
 }
