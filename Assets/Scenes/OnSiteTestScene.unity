@@ -539,7 +539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f491e77fa5b27ee4abe7223cb6a0b59b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f491e77fa5b27ee4abe7223cb6a0b59b, type: 3}
@@ -551,6 +551,11 @@ Transform:
 --- !u!1 &445686413 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f491e77fa5b27ee4abe7223cb6a0b59b, type: 3}
+  m_PrefabInstance: {fileID: 445686411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &445686414 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: f491e77fa5b27ee4abe7223cb6a0b59b, type: 3}
   m_PrefabInstance: {fileID: 445686411}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &445686415
@@ -793,6 +798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prototype
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4f96a315a4ae31041b28153c7fac3ee3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 4f96a315a4ae31041b28153c7fac3ee3, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0
@@ -819,11 +828,6 @@ Transform:
 --- !u!1 &530378995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 4f96a315a4ae31041b28153c7fac3ee3, type: 3}
-  m_PrefabInstance: {fileID: 530378993}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &530378996 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -7635826562936255635, guid: 4f96a315a4ae31041b28153c7fac3ee3, type: 3}
   m_PrefabInstance: {fileID: 530378993}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &530378997
@@ -2266,6 +2270,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336307930}
   m_CullTransparentMesh: 1
+--- !u!1 &1351596157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1351596159}
+  - component: {fileID: 1351596158}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1351596158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351596157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b821987b0774bd2bbf70d12647d38c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Root: {fileID: 0}
+  CancelButton: {fileID: 0}
+  SendMailButton: {fileID: 0}
+  ReTakeButton: {fileID: 0}
+  ToMailAddress: jh.jo@virnect.com
+  OnNetworkConnection:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEmailValidation:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEmailOkay:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1351596159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351596157}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1273.5717, y: -561.5728, z: 8960.206}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1380887921
 GameObject:
   m_ObjectHideFlags: 0
@@ -2548,7 +2610,7 @@ MonoBehaviour:
   renderMode: 2
   smoothTime: 0
   renderersInTarget:
-  - {fileID: 530378996}
+  - {fileID: 445686414}
 --- !u!1 &1562316516
 GameObject:
   m_ObjectHideFlags: 0
