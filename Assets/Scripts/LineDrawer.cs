@@ -33,15 +33,12 @@ public class LineDrawer : MonoBehaviour
         {
             Touch touch = Input.GetTouch(0);
 
-
-
-
             if (touch.phase == TouchPhase.Began)
             {
                 isDrawing = true;
                 lineRenderer.positionCount = 1;
                 lineRenderer.SetPosition(0, GetTouchWorldPosition(touch));
-            }
+            } 
             else if (touch.phase == TouchPhase.Moved && isDrawing)
             {
                 int newPositionCount = lineRenderer.positionCount + 1;

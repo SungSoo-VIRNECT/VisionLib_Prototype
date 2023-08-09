@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/OnSiteTestScene.unity
     guid: b5f0fa80982161e4bb040d91eed084b7
   - enabled: 1
-    path: Assets/Scenes/OnSiteModelTrackSetup.unity
+    path: Assets/Scenes/SetupScene.unity
     guid: 5c51035b0a2d560409066010875c9894
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: beaf2e24b1fa2a74f945bb9949931b35, type: 2}

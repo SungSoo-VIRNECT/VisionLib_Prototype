@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: a6876938c4b17124da8f945ce96149da, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: ad63c2a7dc5ac4c4a88b2d1ab38d40e0, type: 2}
 --- !u!196 &5
 NavMeshSettings:
   serializedVersion: 2
@@ -460,8 +460,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c8e9f9d97f828a49a0329e4e367ffb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transmission: {fileID: 445686413}
+  prototype: {fileID: 445686413}
   slider: {fileID: 284867352}
+  fadeButton: {fileID: 680400009}
+  opaqueButton: {fileID: 680400009}
+  fadeMaterial: {fileID: 2100000, guid: 6acdc9def882db44c853b328074bf7a1, type: 2}
+  opaqueMaterial: {fileID: 2100000, guid: febda4e4821613544b74926f78ecba87, type: 2}
 --- !u!1001 &445686411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1399,7 +1403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18c57615c2a416c469730351028c5a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
 --- !u!4 &712420934
 Transform:
   m_ObjectHideFlags: 0

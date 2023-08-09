@@ -6,16 +6,22 @@ using UnityEngine.UI;
 
 public class ModelUI : MonoBehaviour
 {
-    [SerializeField] private GameObject transmission;
+    [SerializeField] private GameObject prototype;
     [SerializeField] private Slider slider;
+    [SerializeField] private Button fadeButton;
+    [SerializeField] private Button opaqueButton;
+    [SerializeField] private Material fadeMaterial;
+    [SerializeField] private Material opaqueMaterial;
     Renderer renderer;
     
 
     void Start()
     {
-        renderer = transmission.GetComponent<Renderer>();
+        renderer = prototype.GetComponent<Renderer>();
         slider.value = renderer.material.color.a;
         slider.onValueChanged.AddListener(OnSliderValueChanged);
+        fadeButton.onClick.AddListener(OnChangeFade);
+        opaqueButton.onClick.AddListener(OnChangeOpaque);
     }
 
 
@@ -33,13 +39,23 @@ public class ModelUI : MonoBehaviour
 
     public void ShowOrHide()
     {
-        if(transmission.activeSelf)
+        if(prototype.activeSelf)
         {
-            transmission.SetActive(false);
+            prototype.SetActive(false);
         }
         else
         {
-            transmission.SetActive(true);
+            prototype.SetActive(true);
         }
+    }
+
+    private void OnChangeFade()
+    {
+        prototype.GetComponent<Renderer>().material = fadeMaterial;
+    }
+
+    private void OnChangeOpaque()
+    {
+        prototype.GetComponent<Renderer>().material = opaqueMaterial;
     }
 }

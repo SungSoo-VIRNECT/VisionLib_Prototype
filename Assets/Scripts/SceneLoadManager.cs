@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoadManager : MonoBehaviour
 {
-    [SerializeField]private string sceneName;
-
     public void LoadScene(string scene)
     {
         SceneManager.LoadScene(scene);  
